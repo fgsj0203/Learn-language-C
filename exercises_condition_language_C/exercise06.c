@@ -17,12 +17,30 @@ int main()
     // Read data user input
     printf("Note one: \n");
     scanf("%f", &note_one);
+    if (note_one > 10 || note_one < 0)
+    {
+        printf("Note invalid, input note in range 0-10\n");
+        printf("Note one: \n");
+        scanf("%f", &note_one);
+    }
 
     printf("Note two: \n");
     scanf("%f", &note_two);
+    if (note_two > 10 || note_two < 0)
+    {
+        printf("Note invalid, input a note in range 0-10\n");
+        printf("Note two: \n");
+        scanf("%f", &note_two);
+    }
 
     printf("Note three: \n");
     scanf("%f", &note_three);
+    if (note_three > 10 || note_three < 0)
+    {
+        printf("Note invalid, input a note in range 0-10\n");
+        printf("Note three: \n");
+        scanf("%f", &note_three);
+    }
 
     average_notes = (note_one + note_two + note_three) / 3.0;
 
