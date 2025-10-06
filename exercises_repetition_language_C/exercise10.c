@@ -12,7 +12,7 @@ Description: Read a number while number is differente 0
 int main()
 {
     // Section of variables
-    int number = 0, sum_number = 0, i = -1;
+    int number = 0, sum_number = 0, i = -1; // initializr variable i with -1 for enter in loop
 
     // Using structure While for calculate
     while (i != 0)
@@ -20,7 +20,7 @@ int main()
         printf("Input Number: (Enter with 0 - Exit)\n");
         scanf("%d", &number);
         sum_number += number;
-        i = number;
+        i = number; // i received value of number for comparate with condition exit loop
     }
     printf("The sum of numbers: %d\n", sum_number);
 
